@@ -204,3 +204,36 @@ a {
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
+
+#content2 {
+  justify-content: center;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  grid-auto-rows: 0.1fr;
+  filter: drop-shadow(8px 8px 1px rgb(0, 0, 1));
+  background-color: #b1b1b1;
+  width: 400px;
+  height: 500px;
+  padding: 1em 2em;
+  border-radius: 2px;
+  color: #000000;
+  justify-content: center;
+  align-items: center;
+}
+
+.removeBookmark {
+  background-color: #cacaca;
+  display: flex;
+  height: 40px;
+  width: 90%;
+  justify-content: center;
+  filter: drop-shadow(8px 8px 1px rgb(0, 0, 1));
+  transition: 0.6s;
+}
+
+.removeBookmark:hover {
+  translate: 2px 2px;
+  background-color: #b97d7d;
+  text-decoration: line-through;
+}

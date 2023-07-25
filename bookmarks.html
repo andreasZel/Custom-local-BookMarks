@@ -8,7 +8,9 @@
     <div id="title">Custom Bookmarks</div>
     <div id="menu">
       <a id="add_bookmark" href="#popup-box">+</a>
-      <a id="remove_bookmark" href="#popup-box2" onclick="">-</a>
+      <a id="remove_bookmark" href="#popup-box2" onclick="GetBookMarkList()"
+        >-</a
+      >
     </div>
     <div class="Bookmarks_Conteiner">
       <div class="Bookmark">
@@ -56,8 +58,8 @@
       </div>
     </div>
     <div id="popup-box2" class="modal">
-      <div class="content">
-        <a href="#" class="box-close"> × </a>
+      <div id="content2">
+        <a href="#" class="box-close" onclick="removeListElements()"> × </a>
       </div>
     </div>
     <script src="./Js/Functions.js"></script>
