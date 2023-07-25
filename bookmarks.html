@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="./bookmarks.css" />
+    <link rel="stylesheet" href="./CSS/bookmarks.css" />
+    <title>Custom Bookmarks</title>
   </head>
   <body>
     <div id="title">Custom Bookmarks</div>
     <div id="menu">
-      <div id="add_bookmark">+</div>
-      <div id="remove_bookmark">-</div>
-      
+      <a id="add_bookmark" href="#popup-box">+</a>
+      <a id="remove_bookmark" href="#popup-box2" onclick="GetBookMarkList()"
+        >-</a
+      >
     </div>
     <div class="Bookmarks_Conteiner">
       <div class="Bookmark">
@@ -44,5 +46,22 @@
         <p class="Bookmark_text">Google</p>
       </div>
     </div>
+
+    <div id="popup-box" class="modal">
+      <div class="content">
+        <h1>New Bookmark</h1>
+        <input type="text" placeholder="Bookmark Name" />
+        <input type="text" placeholder="Bookmark Link" />
+        <input type="text" placeholder="IMG URL" />
+        <button id="save_bookmarks">Save</button>
+        <a href="#" class="box-close"> × </a>
+      </div>
+    </div>
+    <div id="popup-box2" class="modal">
+      <div id="content2">
+        <a href="#" class="box-close" onclick="removeListElements()"> × </a>
+      </div>
+    </div>
+    <script src="./Js/Functions.js"></script>
   </body>
 </html>
