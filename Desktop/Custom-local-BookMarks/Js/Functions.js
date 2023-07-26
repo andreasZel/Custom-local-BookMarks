@@ -29,3 +29,16 @@ function removeBookmark() {
     BookMarkConteiner.removeChild(BookmarkToRemove);
     BookmarkBtnToRemove.parentNode.removeChild(BookmarkBtnToRemove);
 }
+
+function saveChanges() {
+    var Page = document.documentElement.outerHTML;
+    var htmlContent = [Page];
+    var bl = new Blob(htmlContent, { type: "text/html" });
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(bl);
+    a.download = "bookmarks.html";
+    a.hidden = true;
+    document.body.appendChild(a);
+    a.innerHTML = "";
+    a.click();
+}
