@@ -1,7 +1,7 @@
 body {
   background-color: #313131;
   display: grid;
-  grid-template-rows: 0.1fr 0.2fr 1fr;
+  grid-template-rows: 0.1fr 0.1fr 1fr;
   grid-template-columns: 1fr;
   grid-gap: 20px;
   width: 90%;
@@ -57,13 +57,18 @@ body {
 
 .Bookmarks_Conteiner {
   display: grid;
+  justify-self: center;
   grid-row: 3;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  height: 720px;
+  grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+  grid-row-gap: 50px;
+  grid-column-gap: 20px;
   grid-auto-rows: 1fr;
   overflow-y: scroll;
   overflow-x: hidden;
-  grid-gap: 10px;
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .Bookmark {
@@ -207,10 +212,8 @@ a {
 
 #content2 {
   justify-content: center;
-  position: absolute;
   display: flex;
   flex-direction: column;
-  grid-auto-rows: 0.1fr;
   filter: drop-shadow(8px 8px 1px rgb(0, 0, 1));
   background-color: #b1b1b1;
   width: 400px;
@@ -218,16 +221,36 @@ a {
   padding: 1em 2em;
   border-radius: 2px;
   color: #000000;
-  justify-content: center;
   align-items: center;
+}
+
+#BookmarkRM_Conteiner {
+  width: 100%;
+  height: 400px;
+  display: grid;
+  grid-auto-rows: 0.4fr;
+  justify-content: center;
+  overflow-y: scroll;
+}
+
+#BookmarkRM_Conteiner::-webkit-scrollbar {
+  background-color: #7e7e7e;
+}
+
+#BookmarkRM_Conteiner::-webkit-scrollbar-thumb {
+  background-color: #313131;
 }
 
 .removeBookmark {
   background-color: #cacaca;
   display: flex;
-  height: 40px;
-  width: 90%;
+  height: 70px;
+  width: 300px;
+  padding-top: 5px;
+  text-align: center;
+  padding-bottom: 5px;
   justify-content: center;
+  align-content: center;
   filter: drop-shadow(8px 8px 1px rgb(0, 0, 1));
   transition: 0.6s;
 }
@@ -236,4 +259,73 @@ a {
   translate: 2px 2px;
   background-color: #b97d7d;
   text-decoration: line-through;
+}
+
+#save_del {
+  margin-top: 20px;
+  filter: drop-shadow(2px 2px 1px rgb(0, 0, 0.4));
+  width: 300px;
+  height: 60px;
+  background-color: #8eb97d;
+  transition: 0.6s;
+  font-size: 20px;
+}
+
+#save_del:hover {
+  transform: scale(0.98);
+  background-color: #709462;
+}
+
+@media only screen and (max-width: 1811px) {
+  .Bookmarks_Conteiner {
+    display: grid;
+    justify-self: center;
+    grid-row: 3;
+    width: 100%;
+    height: 750px;
+    grid-template-columns: 0.3fr 0.3fr 0.3fr 0.3fr;
+    grid-row-gap: 50px;
+    grid-column-gap: 20px;
+    grid-auto-rows: 1fr;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 1387px) {
+  .Bookmarks_Conteiner {
+    display: grid;
+    justify-self: center;
+    grid-row: 3;
+    width: 100%;
+    height: 750px;
+    grid-template-columns: 0.4fr 0.4fr 0.4fr;
+    grid-row-gap: 50px;
+    grid-column-gap: 20px;
+    grid-auto-rows: 1fr;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .Bookmarks_Conteiner {
+    display: grid;
+    justify-self: center;
+    grid-row: 3;
+    width: 100%;
+    height: 750px;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-row-gap: 50px;
+    grid-column-gap: 20px;
+    grid-auto-rows: 1fr;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
