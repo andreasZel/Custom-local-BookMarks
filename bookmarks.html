@@ -1,67 +1,71 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="./CSS/bookmarks.css" />
-    <title>Custom Bookmarks</title>
-  </head>
-  <body>
-    <div id="title">Custom Bookmarks</div>
-    <div id="menu">
-      <a id="add_bookmark" href="#popup-box">+</a>
-      <a id="remove_bookmark" href="#popup-box2" onclick="GetBookMarkList()"
-        >-</a
-      >
-    </div>
-    <div class="Bookmarks_Conteiner">
-      <div class="Bookmark">
-        <img
-          class="Bookmark_img"
-          src="https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw"
-          alt="img"
-        />
-        <p class="Bookmark_text">Google</p>
-      </div>
-      <div class="Bookmark">
-        <img
-          class="Bookmark_img"
-          src="https://blog.humanminds.eu/wp-content/uploads/2020/08/%CF%87%CF%81%CE%B7%CF%83%CE%B9%CE%BC%CE%BF%CF%80%CE%BF%CE%B9%CE%AE%CF%83%CF%84%CE%B5-%CF%86%CF%89%CF%84%CE%BF%CE%B3%CF%81%CE%B1%CF%86%CE%AF%CE%B5%CF%82-%CE%B1%CF%80%CF%8C-%CF%84%CE%BF-Google-%CE%BD%CF%8C%CE%BC%CE%B9%CE%BC%CE%B1.jpg"
-          alt="img"
-        />
-        <p class="Bookmark_text">Google</p>
-      </div>
-      <div class="Bookmark">
-        <img
-          class="Bookmark_img"
-          src="https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw"
-          alt="img"
-        />
-        <p class="Bookmark_text">Google</p>
-      </div>
-      <div class="Bookmark">
-        <img
-          class="Bookmark_img"
-          src="https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw"
-          alt="img"
-        />
-        <p class="Bookmark_text">Google</p>
-      </div>
-    </div>
+<html><head>
+  <link rel="stylesheet" href="./CSS/bookmarks.css">
+  <title>Custom Bookmarks</title>
+</head>
 
-    <div id="popup-box" class="modal">
-      <div class="content">
-        <h1>New Bookmark</h1>
-        <input type="text" placeholder="Bookmark Name" />
-        <input type="text" placeholder="Bookmark Link" />
-        <input type="text" placeholder="IMG URL" />
-        <button id="save_bookmarks">Save</button>
-        <a href="#" class="box-close"> × </a>
-      </div>
+<body>
+  <div id="title">Custom Bookmarks</div>
+  <div id="menu">
+    <a id="add_bookmark" href="#popup-box">+</a>
+    <a id="remove_bookmark" href="#popup-box2" onclick="GetBookMarkList()">-</a>
+  </div>
+  <div class="Bookmarks_Conteiner" id="CNT">
+    
+    <div class="Bookmark">
+      <img class="Bookmark_img" src="https://blog.humanminds.eu/wp-content/uploads/2020/08/%CF%87%CF%81%CE%B7%CF%83%CE%B9%CE%BC%CE%BF%CF%80%CE%BF%CE%B9%CE%AE%CF%83%CF%84%CE%B5-%CF%86%CF%89%CF%84%CE%BF%CE%B3%CF%81%CE%B1%CF%86%CE%AF%CE%B5%CF%82-%CE%B1%CF%80%CF%8C-%CF%84%CE%BF-Google-%CE%BD%CF%8C%CE%BC%CE%B9%CE%BC%CE%B1.jpg" alt="img">
+      <p class="Bookmark_text">Google</p>
     </div>
-    <div id="popup-box2" class="modal">
-      <div id="content2">
-        <a href="#" class="box-close" onclick="removeListElements()"> × </a>
-      </div>
+    <div class="Bookmark">
+      <img class="Bookmark_img" src="https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw" alt="img">
+      <p class="Bookmark_text">Google</p>
     </div>
-    <script src="./Js/Functions.js"></script>
-  </body>
-</html>
+    <div class="Bookmark">
+      <img class="Bookmark_img" src="https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw" alt="img">
+      <p class="Bookmark_text">Google</p>
+    </div>
+    <div class="Bookmark">
+      <img class="Bookmark_img" src="https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw" alt="img">
+      <p class="Bookmark_text">Google</p>
+    </div>
+    <div class="Bookmark">
+      <img class="Bookmark_img" src="https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw" alt="img">
+      <p class="Bookmark_text">Google</p>
+    </div>
+    <div class="Bookmark">
+      <img class="Bookmark_img" src="https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw" alt="img">
+      <p class="Bookmark_text">Google</p>
+    </div>
+    <div class="Bookmark">
+      <img class="Bookmark_img" src="https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw" alt="img">
+      <p class="Bookmark_text">Google</p>
+    </div>
+    <div class="Bookmark">
+      <img class="Bookmark_img" src="https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw" alt="img">
+      <p class="Bookmark_text">Google</p>
+    </div>
+  </div>
+
+  <div id="popup-box" class="modal">
+    <div class="content">
+      <h1>New Bookmark</h1>
+      <input type="text" placeholder="Bookmark Name">
+      <input type="text" placeholder="Bookmark Link">
+      <input type="text" placeholder="IMG URL">
+      <button id="save_bookmarks">Save</button>
+      <a href="#" class="box-close"> × </a>
+    </div>
+  </div>
+  <div id="popup-box2" class="modal">
+    <div id="content2">
+      <h1> Bookmarks </h1>
+      <div id="BookmarkRM_Conteiner">
+
+      <p class="removeBookmark" id="Google" onclick="removeBookmark()">Google</p><p class="removeBookmark" id="Google" onclick="removeBookmark()">Google</p><p class="removeBookmark" id="Google" onclick="removeBookmark()">Google</p><p class="removeBookmark" id="Google" onclick="removeBookmark()">Google</p><p class="removeBookmark" id="Google" onclick="removeBookmark()">Google</p><p class="removeBookmark" id="Google" onclick="removeBookmark()">Google</p><p class="removeBookmark" id="Google" onclick="removeBookmark()">Google</p><p class="removeBookmark" id="Google" onclick="removeBookmark()">Google</p></div>
+      <button id="save_del" onclick="saveChanges()">Save</button>
+      <a href="#" class="box-close" onclick="removeListElements()"> × </a>
+    </div>
+  </div>
+  <script src="./Js/Functions.js"></script>
+
+
+<a href="blob:null/e6ee6a51-9619-4660-a0f7-7b4a3d22549a" download="bookmarks.html" hidden=""></a><a href="blob:null/b33f76f3-97db-4e77-80dc-a6ad83e5b31e" download="bookmarks.html" hidden=""></a></body></html>
