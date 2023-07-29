@@ -63,7 +63,7 @@ body {
   justify-self: center;
   grid-row: 2;
   width: 100%;
-  height: 720px;
+  height: 730px;
   grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
   grid-row-gap: 50px;
   grid-column-gap: 20px;
@@ -301,7 +301,7 @@ a {
     justify-self: center;
     grid-row: 2;
     width: 100%;
-    height: 830px;
+    height: 730px;
     grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
     grid-row-gap: 50px;
     grid-column-gap: 20px;
@@ -319,7 +319,7 @@ a {
     justify-self: center;
     grid-row: 2;
     width: 100%;
-    height: 830px;
+    height: 730px;
     grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
     grid-row-gap: 50px;
     grid-column-gap: 20px;
@@ -337,7 +337,7 @@ a {
     justify-self: center;
     grid-row: 2;
     width: 100%;
-    height: 750px;
+    height: 730px;
     grid-template-columns: 0.3fr 0.3fr 0.3fr 0.3fr;
     grid-row-gap: 50px;
     grid-column-gap: 20px;
@@ -355,7 +355,7 @@ a {
     justify-self: center;
     grid-row: 2;
     width: 100%;
-    height: 750px;
+    height: 730px;
     grid-template-columns: 0.3fr 0.3fr 0.3fr 0.3fr;
     grid-row-gap: 50px;
     grid-column-gap: 20px;
@@ -373,7 +373,7 @@ a {
     justify-self: center;
     grid-row: 2;
     width: 100%;
-    height: 750px;
+    height: 730px;
     grid-template-columns: 0.4fr 0.4fr 0.4fr;
     grid-row-gap: 50px;
     grid-column-gap: 20px;
@@ -391,7 +391,7 @@ a {
     justify-self: center;
     grid-row: 2;
     width: 100%;
-    height: 750px;
+    height: 730px;
     grid-template-columns: 0.5fr 0.5fr;
     grid-row-gap: 50px;
     grid-column-gap: 20px;
